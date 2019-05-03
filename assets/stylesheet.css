@@ -30,22 +30,22 @@ div {
 	padding: 20px 40px 20px 40px;
 }
 
-tr.tr-notdone-notthreshold {
+.tr-notdone-notthreshold {
 	border-collapse:collapse;
 	background-color:#f2a2a2;
 }
 
-tr.tr-done-threshold {
+.tr-done-threshold {
 	border-collapse:collapse;
 	background-color:#b8edbe;
 }
 
-tr.tr-done-notthreshold {
+.tr-done-notthreshold {
 	border-collapse:collapse;
 	background-color:#dbedb8;
 }
 
-tr.tr-notdone-threshold {
+.tr-notdone-threshold {
 	border-collapse:collapse;
 	background-color:#ede2b8;
 }
