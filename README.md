@@ -17,3 +17,13 @@ http://localhost:8050/
 ```
 
 After a few seconds (10-20), the pattern overview page should be loaded.
+
+Note that this a prototype implementation, it will have bugs and is not ideal in many ways. But try this general workflow:
+
+1. Look at a pattern you have not reviewed yet. 
+2. Review it. 
+3. If everything is fine, select the "Sign" radio button option and hit 'Submit'
+4. Wait for about 5-10 seconds holding your breath (dont click on anything :P). 
+5. Go to https://github.com/obophenotype/upheno/pulls
+6. You should see your signature pull request there
+7. This is it! Treat the tool gentle and add issues and suggestions [here](https://github.com/obophenotype/pattern-review/issues)
