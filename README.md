@@ -32,5 +32,5 @@ Note that this a prototype implementation, it will have bugs and is not ideal in
 5. Wait for about 5-10 seconds holding your breath (dont click on anything :P). 
 6. Go to https://github.com/obophenotype/upheno/pulls
 7. You should see your signature pull request there
-8. This is it! Treat the tool gentle and add issues and suggestions [here](https://github.com/obophenotype/pattern-review/issues). Note that currently, you dont see which patterns you have JUST now reviewed; sorry. For the newly reviewed patterns to show up, you need to close the app in the terminal (with CTRL-C), merge the pull request on GitHub (or better wait till someone else does), and start the app again. Sorry. :)
+8. This is it! Treat the tool gentle and add issues and suggestions [here](https://github.com/obophenotype/pattern-review/issues). Note that currently, **you dont see which patterns you have JUST now reviewed; sorry. For the newly reviewed patterns to show up, you need to close the app in the terminal (with CTRL-C), merge the pull request on GitHub, and start the app again.** Sorry. :)
 9. When you are done with your current review session, *make sure you close the up in the terminal with CTRL-C!!!!*
