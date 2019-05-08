@@ -11,14 +11,17 @@ docker pull obolibrary/patternreview
 docker run -p 8050:8050 --env-file ./env.list obolibrary/patternreview
 ``` 
 
-(Always do docker pull as well.. Many changes at the moment!)
+**(Always do docker pull as well.. Many changes at the moment!)**
 Give the app a minute or two to load, then go to your browser, and navigate to:
 
 ```
 http://localhost:8050/
 ```
 
-After a few seconds (10-20), the pattern overview page should be loaded.
+After a few seconds (10-20), the pattern overview page should be loaded. The main page should look roughly like this:
+
+![Screenshot of app](https://raw.githubusercontent.com/obophenotype/pattern-review/master/resources/screenshot.png)
+
 
 Note that this a prototype implementation, it will have bugs and is not ideal in many ways. But try this general workflow:
 
