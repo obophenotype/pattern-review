@@ -1,4 +1,4 @@
-**Patter review tool**
+**Pattern review tool**
 
 This app allows a community of pattern reviewers to review and sign off on patterns in a systematic fashion. The assumption is that every community member that is named as a pattern contributor has *signed off* on this pattern. 
 
