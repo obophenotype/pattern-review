@@ -208,8 +208,13 @@ def create_overview_table_row(content_file):
     pattern_path = str(content_file.path)
     pattern_name = pattern_path.replace("src/patterns/","")
     raw_yaml = pattern_dir + pattern_name
-    contents = uopen(raw_yaml).read()
-    yaml_content = yaml.round_trip_load(contents,preserve_quotes=True)
+    try:
+      contents = uopen(raw_yaml).read()
+      yaml_content = yaml.round_trip_load(contents,preserve_quotes=True)
+    except:
+      print(raw_yaml+ " could not be loaded!")
+      return {"pattern": pattern_name, "done": "ERROR", "issue": None, "contr": 0}
+    
     pname = get_pattern_name(pattern_name)
     gh_paths[pname] = pattern_path
     pattern_list[pname] = yaml_content
@@ -231,7 +236,8 @@ def get_pattern_table():
     repo = g.get_repo(repo_name)
     contents = repo.get_contents("src/patterns/dosdp-dev")
     for content_file in contents:
-        rows_list.append(create_overview_table_row(content_file))
+        if content_file.name.endswith(".yaml"):
+          rows_list.append(create_overview_table_row(content_file))
     contents = repo.get_contents("src/patterns/dosdp-patterns")
     for content_file in contents:
         rows_list.append(create_overview_table_row(content_file))
